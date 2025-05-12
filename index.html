@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<!-- <body>
+    <script src="index.js"></script>
+    <h1>Test text</h1>
+    <form action="">
+        <label for="">Remove spaces
+        </label>
+        <input type="text" id="textInput">
+        <button >Submit</button>
+        <p id="finalText">the final text should show up here</p>
+    </form>
+</body> -->
+<body class="center">
+    
+    <input type="text" id="userInput">Type Text Here</input> 
+    <button onclick="test()">Submit</button>
+    <p id="demo">result</p>
+
+    <p>is this the input you wanted? if so, press the next button</p>
+    <button onclick="remove()">Remove spaces</button>
+    <p id="remove"> test text</p>
+
+    <p>is this the input you wanted? if so, press the next button</p>
+
+    <button onclick="add()">Add spaces</button>
+    <p id="add"> test text</p>
+
+    <p>Note: This string is <span id="char-count">___</span> characters long, not including spaces.</p>
+
+    <p>How wide do you want to grid to be?</p>
+    <input type="number" id="width" name="width" min="1">width</input>
+    <button onclick="blockOut()">format grid</button>
+    <p>test text</p>
+
+    
+    <script>
+        function test()
+        {
+            var userInput = document.getElementById("userInput").value;
+            document.getElementById("demo").innerHTML = userInput;
+        }
+        function remove()
+        {
+        	let str = document.getElementById("demo").innerHTML;
+            let res = str.replace(/ /g, "");
+            document.getElementById("remove").innerHTML = res;
+        }
+        
+        function add()
+        {
+        	let sult = document.getElementById("demo").innerHTML;
+            let sent = sult.split('').join(' ');
+            document.getElementById("add").innerHTML = sent;
+        }
+        
+        function blockOut()
+        {
+
+        }
+    </script>
+</body>
+</html>
