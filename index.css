@@ -1,8 +1,37 @@
-.center{
-    margin-left: 25%;
+
+
+div{
+    border: 5px outset black;
+    background-color: #d9d9d9;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+header{
+    text-align: center;
+    background-color: #cccccc;
+    padding: 10px;
+    
 }
 
 body{
     background-image: url("LogoRepeatGrey.jpg");
     background-repeat: repeat;
+    margin: 0px;
+    
 }
+
+p,button,input{
+    color: black;
+    margin-left: 10px;
+}
+
